@@ -1,20 +1,23 @@
 /* CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/*
 .hill-logo img {
-	width: 100px;
-	height:40px;
+	width:auto;
+	height:30px;;
 }
-*/
 
 .hill-logo {
-	padding-bottom: 30px;
+	width:100px;
+	height:auto;
+}
+
+.hill-logo:hover {
+	opacity:.5;
 }
 
 .containerA {
 /* 	background:yellow; */
-	min-height:550px;
+	min-height:700px;
 	z-index:500;
 	position: relative;
 	padding-bottom: 30px;
@@ -22,14 +25,26 @@
 
 .divider {
 	border-top:2px solid white;
+	padding-top:30px;
 }
 
-.labelB {
+.full img{
+	width:100%;
+	height:auto;
+	padding-bottom: 30px;
+}
+
+.full {
+	width:100%;
+	display:inline-block;
+	position:relative;
+}
+
+.labelL, .labelR {
 	width:49.5%;
 	display:inline-block;
 	vertical-align: top;
-	color:white;
-	margin-top:20px;	
+	color:white;	
 	font-family: 'Libre Franklin', sans-serif;
 	z-index: 500;
 	position:relative;
@@ -39,11 +54,18 @@ h1 {
 	font-size: 42px;
 	line-height: 56px;
 	margin:0;
+	letter-spacing: .5px;
 }
 
-.labelB li{
+p {
+	font-size:20px;
+	line-height:32px;
+	margin:0;
+}
+
+.labelL, .labelR li{
 	list-style-type: lower-roman;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 .serif {
@@ -52,6 +74,15 @@ font-family: 'Lora', serif;
 
 .case {
 	margin:0;
+}
+
+.connect {
+	margin: 0;
+	padding: 0;
+}
+
+.connect li {
+	list-style: none;
 }
 
 small {
@@ -69,14 +100,14 @@ i {
 #bio {
 	background-image: linear-gradient(to right, #ed1c24 0%, #fff200 20%, #FFFFFF 40%, #FFFFFF 60%, #00aeef 80%, #2e3192 100%);
 	color:black;
-	padding:6px;
+	padding:3px;
 }
 
 #bio:hover {
 	cursor:help;
 }
 
-.labelB span a{
+.labelL span a{
 	color:white;
 	text-decoration: none;
 	padding-bottom: 6px;
@@ -87,12 +118,27 @@ i {
 	background-image: linear-gradient(to right, #ed1c24 0%, #fff200 20%, #FFFFFF 40%, #FFFFFF 60%, #00aeef 80%, #2e3192 100%);
 	}
 
-span a:hover:before {
+.labelL span a:hover:before {
+	content: "\2190";
+}
+
+.labelR span a{
+	color:white;
+	text-decoration: none;
+	padding-bottom: 6px;
+	
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+	background-size: 100% 2px;
+	background-image: linear-gradient(to right, #ed1c24 0%, #fff200 20%, #FFFFFF 40%, #FFFFFF 60%, #00aeef 80%, #2e3192 100%);
+	}
+
+.labelR span a:hover:before {
 	content: "\2192";
 }
 
 body {
-	padding:2%;	
+	padding:30px;	
 }
 
 .Abody {
@@ -109,6 +155,14 @@ body {
     background-repeat: no-repeat;
     background-size: 45%; 
     z-index:1;
+}
+
+.case-hero {
+	opacity:.15;
+}
+
+#EpicyclesC {
+	background-image: url(../images/intra.png);
 }
 
 
