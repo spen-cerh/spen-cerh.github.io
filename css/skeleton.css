@@ -17,10 +17,10 @@
 
 .containerA {
 /* 	background:yellow; */
-	min-height:700px;
+	min-height:200px;
 	z-index:500;
 	position: relative;
-	padding-bottom: 30px;
+	padding-bottom: 180px;
 }
 
 .divider {
@@ -52,15 +52,25 @@
 
 h1 {
 	font-size: 42px;
-	line-height: 56px;
+	line-height: 60px;
 	margin:0;
 	letter-spacing: .5px;
+	margin-bottom:60px;
+}
+
+h2 {
+	font-size: 28px;
+	line-height: 42px;
+	margin:0;
+	letter-spacing: .5px;
+	margin-bottom:30px;
 }
 
 p {
-	font-size:20px;
-	line-height:32px;
+	font-size:18px;
+	line-height:36px;
 	margin:0;
+	font-family: 'IBM Plex Mono', monospace;
 }
 
 .labelL, .labelR li{
@@ -69,7 +79,7 @@ p {
 }
 
 .serif {
-font-family: 'Lora', serif;
+font-family: 'IBM Plex Mono', monospace;
 }
 
 .case {
@@ -89,12 +99,8 @@ small {
 	vertical-align: super;
     font-size: 16px;
     color:white;
-	font-family: 'Lora', serif;
-  letter-spacing: 1px;
-}
-
-i {
-	font-family: 'Lora', serif;
+font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 2px;
 }
 
 #bio {
@@ -163,6 +169,16 @@ body {
 
 #EpicyclesC {
 	background-image: url(../images/intra.png);
+}
+
+
+::selection {
+  color:black;
+  background:yellow; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  color:black;
+  background: yellow; /* Gecko Browsers */
 }
 
 
