@@ -1,6 +1,19 @@
 /* CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+a svg:hover #logo {
+	fill:gray;
+/*
+	stroke-width: 2px;
+	stroke-alignment:inside;
+*/
+}
+
+a svg {
+	height:30px;
+	width: auto;
+}
+
 .hill-logo img {
 	width:auto;
 	height:30px;;
